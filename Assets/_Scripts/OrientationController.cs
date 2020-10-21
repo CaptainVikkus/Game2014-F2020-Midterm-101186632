@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//HEADER: Orientation Controller, Jake Treleaven, 101186632, 21-10-2020
+//Rotates the main rotator object according to device orientation
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,7 +11,7 @@ public class OrientationController : MonoBehaviour
     public float landscapeScale = 2.0f;
     private Vector3 m_lScale;
     public float portraitRot = 0.0f;
-    public float portraitScale = 4.0f;
+    public float portraitScale = 0.5f;
     private Vector3 m_pScale;
 
     public TextMeshProUGUI text;

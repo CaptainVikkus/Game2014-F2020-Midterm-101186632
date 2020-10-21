@@ -603,7 +603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   landscapeRot: 0
   landscapeScale: 1
-  portraitRot: 0
+  portraitRot: 270
   portraitScale: 0.5
   text: {fileID: 468964353}
 --- !u!1 &1001947327

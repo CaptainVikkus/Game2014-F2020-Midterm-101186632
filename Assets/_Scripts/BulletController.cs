@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//HEADER: BulletController, Jake Treleaven, 101186632, 21-10-2020
+//handles bullet movement and returns to bulletmanager at the edge of screens
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

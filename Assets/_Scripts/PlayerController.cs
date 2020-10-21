@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//HEADER: Player Controller, Jake Treleaven, 101186632, 21-10-2020
+//Controls the player characters movement and firing
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.Configuration;
