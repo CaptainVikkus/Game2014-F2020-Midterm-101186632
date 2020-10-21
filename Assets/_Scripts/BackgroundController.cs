@@ -16,18 +16,18 @@ public class BackgroundController : MonoBehaviour
 
     private void _Reset()
     {
-        transform.position = new Vector3(0.0f, verticalBoundary);
+        transform.localPosition = new Vector3(0.0f, verticalBoundary);
     }
 
     private void _Move()
     {
-        transform.position -= new Vector3(0.0f, verticalSpeed) * Time.deltaTime;
+        transform.localPosition -= new Vector3(0.0f, verticalSpeed) * Time.deltaTime;
     }
 
     private void _CheckBounds()
     {
         // if the background is lower than the bottom of the screen then reset
-        if (transform.position.y <= -verticalBoundary)
+        if (transform.localPosition.y <= -verticalBoundary)
         {
             _Reset();
         }

@@ -17,19 +17,19 @@ public class EnemyController : MonoBehaviour
 
     private void _Move()
     {
-        transform.position += new Vector3(horizontalSpeed * direction * Time.deltaTime, 0.0f, 0.0f);
+        transform.localPosition += new Vector3(horizontalSpeed * direction * Time.deltaTime, 0.0f, 0.0f);
     }
 
     private void _CheckBounds()
     {
         // check right boundary
-        if (transform.position.x >= horizontalBoundary)
+        if (transform.localPosition.x >= horizontalBoundary)
         {
             direction = -1.0f;
         }
 
         // check left boundary
-        if (transform.position.x <= -horizontalBoundary)
+        if (transform.localPosition.x <= -horizontalBoundary)
         {
             direction = 1.0f;
         }

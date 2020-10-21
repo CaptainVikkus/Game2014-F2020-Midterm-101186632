@@ -34,6 +34,7 @@ public class BulletManager : MonoBehaviour
         var newBullet = m_bulletPool.Dequeue();
         newBullet.SetActive(true);
         newBullet.transform.position = position;
+        newBullet.transform.rotation = transform.rotation;
         return newBullet;
     }
 

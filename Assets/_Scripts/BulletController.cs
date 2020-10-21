@@ -24,12 +24,12 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     private void _Move()
     {
-        transform.position += new Vector3(0.0f, verticalSpeed, 0.0f) * Time.deltaTime;
+        transform.localPosition += new Vector3(0.0f, verticalSpeed, 0.0f) * Time.deltaTime;
     }
 
     private void _CheckBounds()
     {
-        if (transform.position.y > verticalBoundary)
+        if (transform.localPosition.y > verticalBoundary)
         {
             bulletManager.ReturnBullet(gameObject);
         }
